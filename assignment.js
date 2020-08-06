@@ -71,3 +71,34 @@ console.log(output); // - Hira
 //------------   tinyFriend code  End  ---------------//
 
 
+//------------   brickCalculator code  start  ---------------//
+
+function brickCalculator(tola){
+    for(let i = 0; i < tola; i++){
+        const element = tola[i];
+        
+        const brick = 1000;
+        
+        if(element >= 1 && element <= 10){
+            const feet = 15;
+            let under_10TolaBrick = brick * feet * element;
+            return under_10TolaBrick;
+        }
+        else if(element >=11 && element <= 20){
+            const feet = 12;
+            let upper_11TotalBrick = brick * feet * element;
+            return upper_11TotalBrick;
+        }
+        else if (element >= 21){
+           const feet = 10;
+            let upper_21TotalBrick = brick * feet * element;
+            return upper_21TotalBrick;
+        }
+       
+    }   
+} 
+
+brickCalculator();
+
+//------------   brickCalculator code  End  ---------------//
+
